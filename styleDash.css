@@ -1,0 +1,107 @@
+/* styleDash.css */
+
+/* Reset des marges et des paddings pour tout le document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Utilisation de la police Inter */
+}
+
+/* Style de la barre latérale */
+.sidebar {
+    position: fixed; /* Pour la maintenir fixée sur le côté */
+    top: 0; /* Alignement en haut */
+    left: 0; /* Alignement à gauche */
+    height: 100%; /* Prend toute la hauteur de la fenêtre */
+    width: 15%; /* Largeur de la barre latérale, 15% de la largeur du viewport */
+    background-color: black; /* Couleur de fond noire */
+    color: white; /* Couleur du texte blanc */
+    padding: 20px; /* Espacement interne pour le contenu */
+}
+
+/* Style du titre dans la barre latérale */
+.sidebar h2 {
+    margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+/* Style de la liste du menu */
+.sidebar ul {
+    list-style-type: none; /* Supprime les puces de liste */
+}
+
+/* Style des liens du menu */
+.sidebar ul li a {
+    color: white; /* Couleur du texte blanc */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    display: block; /* Les liens sont des éléments de bloc pour les espacer verticalement */
+    padding: 10px 0; /* Espacement intérieur des liens */
+}
+
+/* Ajout du contour orange à l'élément actif */
+.sidebar ul li.active a {
+    background-color: #333; /* Couleur de fond */
+    border-left: 4px solid #FF7A00; /* Contour orange */
+}
+
+/* Style des liens du menu au survol */
+.sidebar ul li a:hover {
+    background-color: #333; /* Couleur de fond au survol */
+    border-left: 4px solid #FF7A00; /* Contour orange au survol */
+} 
+
+/* Positionnement de la section principale */
+.main-content {
+    margin-left: 15%; /* Pour laisser de l'espace pour la barre latérale */
+    margin-top: 20px; /* Pour dégager l'espace pour le titre et les horaires */
+    padding: 20px; /* Espacement interne pour le contenu */
+}
+
+
+
+/* Style de la grille de l'emploi du temps */
+.emploi-du-temps {
+    width: 100%; /* Utilisation de la largeur totale disponible */
+    border-collapse: collapse; /* Fusion des bordures de cellules */
+}
+
+/* Style des cellules de l'emploi du temps */
+.emploi-du-temps th,
+.emploi-du-temps td {
+    border: 1px solid #ccc; /* Bordures fines entre les cellules */
+    padding: 10px; /* Espacement interne des cellules */
+    text-align: center; /* Centrage du texte dans les cellules */
+}
+
+/* Style de l'en-tête de la grille */
+.emploi-du-temps th {
+    background-color: #f2f2f2; /* Couleur de fond pour les en-têtes */
+}
+
+/* Style des jours de la semaine */
+.emploi-du-temps th:first-child {
+    width: 100px; /* Largeur fixe pour les jours de la semaine */
+}
+
+/* Style des horaires */
+.emploi-du-temps td:first-child {
+    font-weight: bold; /* Texte en gras pour les horaires */
+}
+
+/* Nouveau style pour le logo */
+.logo {
+    font-weight: bold; /* Texte en gras */
+    color: #FFF; /* Couleur du texte */
+    text-align: center; /* Centrage du texte */
+    margin-top: 20px; /* Marge en haut pour l'espacement */
+}
+
+/* Style pour les icônes à gauche des éléments du menu */
+.sidebar ul li img {
+    width: 20px; /* Taille de l'icône */
+    height: 20px;
+    margin-right: 10px; /* Marge à droite de l'icône pour l'espacement */
+}
+
+
+
